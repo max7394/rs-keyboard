@@ -1,0 +1,81 @@
+main {
+    width: 1280px;
+    text-align: center;
+}
+
+.keyboard {
+    display: grid;
+    border: 1px solid;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    background: #A66F00;
+}
+
+.keyboard__row {
+    display: grid;
+    gap: 10px;
+    padding: 5px;
+  }
+
+.keyboard__key {
+display: flex;
+cursor: pointer;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border: 1px solid;
+height: 50px;
+background: #fad791;
+border-radius: 5px;
+}
+
+[data-code="Space"] {
+    width: 400px;
+  }
+
+[data-code="ShiftLeft"] {
+width: 150px;
+}
+
+[data-code="ControlLeft"] {
+    width: 100px;
+}
+
+[data-code="Backspace"] {
+    width: 150px;
+}
+
+[data-code="Enter"] {
+    width: 125px;
+}
+
+[data-code="ArrowLeft"],
+[data-code="ArrowUp"],
+[data-code="ArrowDown"],
+[data-code="ArrowRight"] {
+  background: #FFBF40;
+}
+
+[data-code="Tab"],
+[data-code="CapsLock"],
+[data-code="ShiftLeft"],
+[data-code="MetaLeft"],
+[data-code="AltLeft"],
+[data-code="Space"],
+[data-code="AltRight"],
+[data-code="MetaRight"],
+[data-code="ControlRight"],
+[data-code="ShiftRight"],
+[data-code="Enter"],
+[data-code="Backspace"],
+[data-code="ControlLeft"] {
+  background: #BF8F30;
+}
+
+.active {
+    background: #FFD073;
+    transition: all .2s ease;
+    box-shadow: inset 0px 0px 10px 10px rgba(166, 99, 0, 0.5);
+}
+  
