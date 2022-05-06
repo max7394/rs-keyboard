@@ -24,4 +24,21 @@ justify-content: center;
 align-items: center;
 border: 1px solid;
 height: 50px;
+background: green;
+}
+
+[data-code="Space"] {
+    width: 500px;
+  }
+
+[data-code="ShiftLeft"] {
+width: 120px;
+}
+
+[data-code="ShiftRight"] {
+    width: 150px;
+}
+
+[data-code="ControlLeft"] {
+    width: 100px;
 }
